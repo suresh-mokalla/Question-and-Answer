@@ -1,0 +1,132 @@
+/* General app styling */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Container for Q&A Form and Q&A Preview */
+.qna-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.qna-form,
+.qna-preview {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Styling the Q&A items in separate cards */
+.qna-item-card {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+}
+
+.qna-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.qna-item input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling the delete button */
+.delete-btn {
+  align-self: flex-end;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+/* Button styling */
+.controls {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Save button styled as green */
+.save-btn {
+  background-color: green;
+}
+
+.save-btn:hover {
+  background-color: darkgreen;
+}
+
+/* Styling the Q&A Preview */
+.preview {
+  margin-top: 20px;
+}
+
+/* Each saved Q&A will be shown in a separate card */
+.saved-qna-card {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.saved-qna {
+  display: flex;
+  flex-direction: column;
+}
+
+.saved-qna p {
+  margin: 5px 0;
+}
